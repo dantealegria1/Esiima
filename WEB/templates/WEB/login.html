@@ -1,0 +1,25 @@
+<!-- WEB/templates/WEB/login.html -->
+<!DOCTYPE html>
+{% load static %}
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    {% load static %} 
+    <link rel="stylesheet" href="{% static 'WEB/style.css' %}">
+</head>
+<body>
+    <h2>Iniciar sesión</h2>
+    
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Iniciar sesión</button>
+    </form>
+
+    {% if form.non_field_errors %}
+        <p style="color: red;">{{ form.non_field_errors }}</p>
+    {% endif %}
+</body>
+</html>
+
