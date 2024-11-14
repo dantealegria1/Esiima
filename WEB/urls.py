@@ -1,9 +1,9 @@
-# nombre_app/urls.py
 from django.urls import path
 from . import views
-from django.contrib.auth.views import LoginView
+
 urlpatterns = [
-    path('', views.home, name='home'),
-    path('login/',LoginView.as_view(template_name='WEB/login.html'),name='login')
+    path('', views.home, name='home'),  # Página de inicio (login)
+    path('login/', views.login_view, name='login'),  # Vista para manejar el login
+    path('secciones/', views.secciones_view, name='secciones'),  # Página a la que se redirige después de iniciar sesión
 ]
 

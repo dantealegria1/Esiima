@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrusel</title>
+    <link rel="stylesheet" href="{% static 'WEB/style2.css' %}">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="{% static 'imagenes/esiima.png' %}" alt="Logo">
+        </div>
+        <div class="search-bar">
+            <input id="texto" type="text" placeholder="Buscar...">
+            <button class="search-button">
+                <img src="{% static 'imagenes/buscar.png' %}" alt="Buscar">
+            </button>
+        </div>
+        <div class="icons">
+            <button class="icon-button theme-toggle">
+                <img src="{% static 'imagenes/contraste.png' %}" alt="Cambiar tema">
+            </button>
+            <button class="icon-button profile-icon">
+                <img src="{% static 'imagenes/informacion.png' %}" alt="Información">
+            </button>
+        </div>
+    </div>
+    <div id="slider">
+        <input type="radio" name="slider" id="slide1" checked>
+        <input type="radio" name="slider" id="slide2">
+        <input type="radio" name="slider" id="slide3">
+        <input type="radio" name="slider" id="slide4">
+        <div id="slides">
+           <div id="overflow">
+              <div class="inner">
+                 <div class="slide slide_1">
+                    <img src="{% static 'imagenes/carrusel1.jpg' %}" alt="Imagen 1">
+                 </div>
+                 <div class="slide slide_2">
+                    <img src="{% static 'imagenes/carrusel2.jpg' %}" alt="Imagen 2">
+                 </div>
+                 <div class="slide slide_3">
+                    <img src="{% static 'imagenes/carrusel3.jpg' %}" alt="Imagen 3">
+                 </div>
+                 <div class="slide slide_4">
+                    <img src="{% static 'imagenes/carrusel4.jpg' %}" alt="Imagen 4">
+                 </div>
+              </div>
+           </div>
+        </div>
+        <div id="controls">
+           <label for="slide1"></label>
+           <label for="slide2"></label>
+           <label for="slide3"></label>
+           <label for="slide4"></label>
+        </div>
+        <div id="bullets">
+           <label for="slide1"></label>
+           <label for="slide2"></label>
+           <label for="slide3"></label>
+           <label for="slide4"></label>
+        </div>
+     </div>
+
+</body>
+</html>

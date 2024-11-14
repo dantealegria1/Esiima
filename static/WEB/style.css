@@ -1,83 +1,136 @@
-/* Archivo: styles.css */
-
-/* Estilo para el cuerpo de la página */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
+/* Fondo de pantalla */
+/* Fondo de pantalla */
+body, html {
+    height: 100%;
     margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif;
+    position: relative; /* Necesario para el posicionamiento del pseudo-elemento */
 }
 
-/* Encabezados */
-h1, h2, h3, h4, h5, h6 {
-    color: #4CAF50; /* Verde */
-    margin: 10px 0;
+/* Crear un pseudo-elemento para la capa de fondo desenfocada */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../imagenes/pixelcut-export-mK8md3p3_-transformed\ \(1\).jpeg");
+    background-size: cover; /* Para cubrir toda la pantalla */
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(3.5px); /* Aplicar el desenfoque solo a la imagen */
+    z-index: -1; /* Asegura que la capa de fondo quede detrás del contenido */
 }
 
-h1 {
-    font-size: 2.5em;
+
+.formulario {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px; /* Adjusted to fit the form better */
+    background-color: #fff; /* White background for the form */
+    border-radius: 25px; /* Slightly rounded corners */
+    padding: 30px; /* Increased padding */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    color: #333; /* Neutral text color */
 }
 
-h2 {
-    font-size: 2em;
+.logo-texto {
+    display: flex;
+    align-items: center; /* Alinea verticalmente en el centro */
+    justify-content: center; /* Centra horizontalmente */
+    flex-direction: row; /* Coloca los elementos en la misma fila */
+    margin-right: 55px;
 }
 
-/* Párrafos */
-p {
-    line-height: 1.6;
-    margin: 10px 0;
-}
-
-/* Enlaces */
-a {
-    color: #4CAF50; /* Verde */
-    text-decoration: none;
-}
-
-a:hover {
-    color: #388E3C; /* Verde más oscuro */
-}
-
-/* Botones */
-button, .btn {
-    background-color: #4CAF50; /* Verde */
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover, .btn:hover {
-    background-color: #388E3C; /* Verde más oscuro */
-}
-
-/* Contenedor */
-.container {
-    width: 80%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-}
-
-/* Estilo para las listas */
-ul {
-    list-style-type: disc;
-    padding-left: 20px;
-}
-
-li {
-    margin-bottom: 5px;
-}
-
-/* Imágenes */
-img {
-    max-width: 100%;
+.logo1 {
+    width: 80px;
     height: auto;
-    border-radius: 5px;
+    margin-right: 36px; /* Espacio a la derecha de la imagen */
 }
 
+.texto-hola {
+    font-size: 25px; /* Slightly smaller font */
+    color: #333; /* Dark gray text color */
+    margin-top: 20px;
+}
+
+/* Estilo para los inputs del formulario */
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.captcha {
+    display: flex;
+    align-items: center; /* Alinea verticalmente en el centro */
+    gap: 10px; /* Espacio entre el input y el cuadro */
+}
+
+#captcha {
+    flex: 1; /* Permite que el input tome el espacio disponible */
+}
+
+.captcha input {
+    width: 100%;
+    max-width: 250px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#texto-cuadro {
+    background-color: #E4006F;
+    color: white;
+    padding: 10px;
+    border-radius: 25px;
+    font-size: 18px;
+    line-height: 1.5;
+    display: inline-block;
+    min-width: 80px;
+    text-align: center;
+}
+
+/* Estilo del botón */
+button[type="submit"] {
+    width: 100%;
+    background-color: #007BFF; /* Blue button color */
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* Estilo para el botón de inicio de sesión */
+button[type="submit"] {
+    padding: 15px 21%; /* Hace el botón más pequeño */
+    font-size: 14px; /* Fuente más pequeña */
+    background-color: #01327A; /* Azul de fondo */
+    color: white;
+    border: none;
+    border-radius: 20px; /* Bordes redondeados */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transición suave para el hover */
+    width: auto; /* Ajuste al tamaño del contenido */
+    margin-top: 20px; /* Espaciado superior */
+    margin-left: 77px; /* Espacio a la derecha de la imagen */
+
+}
+
+/* Efecto hover para el botón */
+button[type="submit"]:hover {
+    background-color: #0056b3; /* Azul más oscuro cuando se pasa el ratón */
+    border-radius: 20px; /* Bordes redondeados */
+}

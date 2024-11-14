@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e6e6e6;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e6e6e6;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    margin-top: 10px;
+    height: 70px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 5px 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-left: 900px;
+    max-width: 200px;
+    width: 100%;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    padding: 8px 12px;
+    font-size: 16px;
+    flex: 1;
+    margin-right: 50px;
+    width: 100%;
+}
+
+.search-bar .search-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.search-bar .search-button img {
+    height: 20px;
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+}
+
+.icon-button {
+    background-color: #4a90e2;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.icon-button img {
+    height: 37px;
+}
+
+#slider {
+    margin: 0 auto;
+    width: 1500px; /* Ancho que ya tienes */
+    max-width: 100%;
+    text-align: center;
+    height: 400px; /* Ajusta la altura aquí */
+}
+
+#slides .inner {
+    transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    width: 400%; /* Mantén el ancho de 400% para 4 diapositivas */
+    line-height: 0;
+    height: auto; /* Asegura que las diapositivas ocupen toda la altura del contenedor */
+}
+
+#slides .slide {
+    width: 25%; /* Cada diapositiva ocupa el 25% del contenedor */
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Asegura que cada diapositiva ocupe toda la altura del contenedor */
+    color: #fff;
+}
+
+#slide1:checked ~ #slides .inner {
+    margin-left: 0; /* Primera diapositiva */
+}
+
+#slide2:checked ~ #slides .inner {
+    margin-left: -100%; /* Segunda diapositiva */
+}
+
+#slide3:checked ~ #slides .inner {
+    margin-left: -200%; /* Tercera diapositiva */
+}
+
+#slide4:checked ~ #slides .inner {
+    margin-left: -300%; /* Cuarta diapositiva */
+}
+
+#slides .slide img {
+    width: 800px;   /* Establece un ancho fijo */
+    height: 600px;  /* Establece una altura fija */
+    object-fit: cover;  /* Mantiene la relación de aspecto */
+}

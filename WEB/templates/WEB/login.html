@@ -1,25 +1,47 @@
-<!-- WEB/templates/WEB/login.html -->
-<!DOCTYPE html>
 {% load static %}
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    {% load static %} 
     <link rel="stylesheet" href="{% static 'WEB/style.css' %}">
 </head>
 <body>
-    <h2>Iniciar sesión</h2>
-    
-    <form method="POST">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit">Iniciar sesión</button>
-    </form>
+    <div class="formulario">
+        <div class="logo-texto">
+            <img class="logo1" src="{% static 'imagenes/logo.png' %}" alt="Logo">
+            <span class="texto-hola">¡Hola de nuevo!</span>
+        </div>
+        <br>
+        <!-- Asegúrate de que el formulario está configurado correctamente -->
+        <form id="loginForm" method="POST" action="{% url 'login' %}">
+            {% csrf_token %}
+            <div class="usuario">
+                <label for="usuario">Id personal</label><br>
+                <input type="text" id="usuario" name="usuario" required>
+            </div>
+            <div class="contraseña">
+                <label for="password">Contraseña</label><br>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <label for="captcha" id="captchaimg">Ingresa los caracteres de la imagen</label>
+            <br>
+            <div class="captcha">
+                <input type="text" id="captcha" name="captcha" required>
+                <span id="texto-cuadro">ABCD</span>
+            </div>
+            <button type="submit" onclick="submitForm()">Log in</button>
+        </form>
+    </div>
+    <script>
+        function submitForm() {
+            // Aquí se enviará el formulario, y en el backend se hará la verificación
+            document.getElementById('loginForm').submit();
+        }
+    </script>
 
-    {% if form.non_field_errors %}
-        <p style="color: red;">{{ form.non_field_errors }}</p>
-    {% endif %}
 </body>
 </html>
+
 

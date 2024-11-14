@@ -27,6 +27,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+STATIC_URL = '/static/'
+STATICFILES_DIRS = [BASE_DIR / "WEB/static"]
+
 
 # Application definition
 
@@ -69,6 +72,9 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'Esiima.wsgi.application'
+# settings.py
+
+LOGIN_REDIRECT_URL = '/secciones/'  # Redirige al usuario a la página 'secciones'
 
 
 # Database
