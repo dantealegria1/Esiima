@@ -1,0 +1,238 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e6e6e6;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e6e6e6;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.logo img {
+    margin-top: 10px;
+    height: 70px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 5px 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-left: 900px;
+    max-width: 200px;
+    width: 100%;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    padding: 8px 12px;
+    font-size: 16px;
+    flex: 1;
+    margin-right: 50px;
+    width: 100%;
+}
+
+.search-bar .search-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.search-bar .search-button img {
+    height: 20px;
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+}
+
+.icon-button {
+    background-color: #465ED4;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.icon-button img {
+    height: 37px;
+}
+/* Estilos para el menú lateral */
+.sidebar {
+    width: 250px;
+    background-color: #e6e6e6;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.logo-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar-logo {
+    height: 80px;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    margin: 10px 0;
+}
+
+.menu a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    color: #333;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: #e0e0e0;
+}
+
+.menu img {
+    width: 24px;
+    height: 24px;
+}
+
+.submenu {
+    margin-left: 20px;
+    list-style: none;
+    padding: 5px 0;
+}
+
+.submenu li a {
+    font-size: 14px;
+    color: #666;
+}
+
+.submenu li a:hover {
+    color: #000;
+}
+.main-content {
+    margin-left: 300px; /* Para acomodar la sidebar */
+    margin-top: -50px;  /* Ajusta este valor para mover el div hacia arriba */
+    padding: 20px;
+    background-color: #e6e6e6;
+    border-radius: 8px;
+    max-width: 1200px;
+    margin-bottom: 250px;
+    margin-top: -120px;
+}
+
+
+.header-section h1 {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.info-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.info-box {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 25px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.info-box-TITLE{
+    background-color: #465ED4;
+    padding: 25px;
+    border-radius: 25px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #ffffff;
+    font-size: 34px;
+    margin-bottom: 60px;
+    width: 400px;
+    margin-left: 350px;
+}
+.info-box p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.info-box strong {
+    color: #333;
+    font-size: 16px;
+}
+
+.button-section {
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.details-button, .pay-button {
+    background-color: #f5a623;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 30px 50px;
+    font-size: 22px;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: background-color 0.3s ease;
+    width: 200px;
+}
+
+.pay-button {
+    background-color: #d7263d;
+}
+
+.details-button:hover {
+    background-color: #e08920;
+}
+
+.pay-button:hover {
+    background-color: #c21e34;
+}
+ 

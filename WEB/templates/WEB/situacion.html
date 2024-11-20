@@ -1,0 +1,146 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{% static 'WEB/style5.css' %}">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="{% static 'imagenes/esiima.png' %}" alt="Logo">
+        </div>
+        <div class="search-bar">
+            <input id="texto" type="text" placeholder="Buscar...">
+            <button class="search-button">
+                <img src="{% static 'imagenes/buscar.png' %}" alt="Buscar">
+            </button>
+        </div>
+        <div class="icons">
+            <button class="icon-button theme-toggle">
+                <img src="{% static 'imagenes/contraste.png' %}" alt="Cambiar tema">
+            </button>
+            <button class="icon-button profile-icon">
+                <img src="{% static 'imagenes/informacion.png' %}" alt="Información">
+            </button>
+        </div>
+    </div>
+    <div class="sidebar">
+        <div class="logo-section">
+            <img src="{% static 'imagenes/esiima.png' %}" alt="Logo" class="sidebar-logo">
+        </div>
+        <ul class="menu">
+            <li>
+                <a href="#">
+                    <button class="icon-button theme-toggle">
+                        <img src="{% static 'imagenes/t1s.png' %}" alt="Control escolar">
+                    </button>
+                    <span>Control escolar</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <button class="icon-button theme-toggle">
+                        <img src="{% static 'imagenes/t2s.png' %}" alt="Cajas">
+                    </button>
+                    <span>Cajas</span>
+                </a>
+                <ul class="submenu">
+                    <li><a href="#">Pagos</a></li>
+                    <li><a href="#">Extensiones</a></li>
+                    <li><a href="#">Prórrogas</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <button class="icon-button theme-toggle">
+                        <img src="{% static 'imagenes/t3s.png' %}" alt="Formación integral">
+                    </button>
+                    <span>Formación integral</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <button class="icon-button theme-toggle">
+                        <img src="{% static 'imagenes/t4s.png' %}" alt="Evaluación">
+                    </button>
+                    <span>evaluación</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <button class="icon-button theme-toggle">
+                        <img src="{% static 'imagenes/t5s.png' %}" alt="Salir">
+                    </button>
+                    <span>Salir</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <div class="info-section">
+            <div class="info-box">
+                <p class="text-blue">id personal:</p>
+                <p><strong>331696</strong></p>
+            </div>
+            <div class="info-box">
+                <p class="text-blue">nombre del alumno:</p>
+                <p><strong>Andrea Balandran Felix</strong></p>
+            </div>
+            <div class="info-box">
+                <p class="text-blue">Situacion Academica:</p>
+                <p><strong>Regular</strong></p>
+            </div>
+            <div class="info-box">
+                <p class="text-blue">promedio:</p>
+                <p><strong>8.5</strong></p>
+            </div>
+            <div class="info-box">
+                <p class="text-blue">Alto riego academico:</p>
+                <p><strong>no</strong></p>
+            </div>
+            <div class="info-box">
+                <p class="text-blue">Adeudo materias:</p>
+                <p><strong>no</strong></p>
+            </div>
+        </div>
+
+    </div>
+    <div class="Titulo-tabla">
+        <p >Informacion del usuario</p>
+    </div>
+  <div class="table-container">
+    <table>
+        <tr>
+            <td class="text-red"><strong>Ciclo Escolar Año: 2024 periodo 2</strong></td>
+            <td class="text-amarillo"><strong>al 14 Dic-2024</strong></td>
+        </tr>
+        <tr>
+            <td class="text-red"><strong>Nivel de Estudios</strong></td>
+            <td class="text-amarillo"><strong>Licenciatura</strong></td>
+        </tr>
+        <tr>
+            <td class="text-red"><strong>Carrera</strong></td>
+            <td class="text-amarillo"><strong>Ing en Computación Inteligente</strong></td>
+        </tr>
+        <tr>
+            <td class="text-red"><strong>Sem/Año</strong></td>
+            <td class="text-amarillo"><strong>Grupo 7-A</strong></td>
+        </tr>
+        <tr>
+            <td class="text-red"><strong>Nombre</strong></td>
+            <td class="text-amarillo"><strong>Balandran Andrea Margarita</strong></td>
+        </tr>
+        <tr>
+            <td class="text-red"><strong>Cursa Actualmente</strong></td>
+            <td class="text-amarillo"><strong>Carga Completa de Materias</strong></td>
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>
+
+

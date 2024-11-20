@@ -1,0 +1,136 @@
+html y css{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{% static 'WEB/style3.css' %}">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="{% static 'imagenes/esiima.png' %}" alt="Logo">
+        </div>
+        <div class="search-bar">
+            <input id="texto" type="text" placeholder="Buscar...">
+            <button class="search-button">
+                <img src="{% static 'imagenes/buscar.png' %}" alt="Buscar">
+            </button>
+        </div>
+        <div class="icons">
+            <button class="icon-button theme-toggle">
+                <img src="{% static 'imagenes/contraste.png' %}" alt="Cambiar tema">
+            </button>
+            <button class="icon-button profile-icon">
+                <img src="{% static 'imagenes/informacion.png' %}" alt="Información">
+            </button>
+        </div>
+    </div>
+    <div class="sidebar">
+        <div class="logo-section">
+            <img src="{% static 'imagenes/esiima.png' %}" alt="Logo" class="sidebar-logo">
+        </div>
+        <ul class="menu">
+            <li>
+                <a href="#">
+                    <button class="icon-button theme-toggle">
+                        <img src="{% static 'imagenes/t1s.png' %}" alt="Control escolar">
+                    </button>
+                    <span>Control escolar</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <button class="icon-button theme-toggle">
+                        <img src="{% static 'imagenes/t2s.png' %}" alt="Cajas">
+                    </button>
+                    <span>Cajas</span>
+                </a>
+                <ul class="submenu">
+                    <li><a href="#">Pagos</a></li>
+                    <li><a href="#">Extensiones</a></li>
+                    <li><a href="#">Prórrogas</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <button class="icon-button theme-toggle">
+                        <img src="{% static 'imagenes/t3s.png' %}" alt="Formación integral">
+                    </button>
+                    <span>Formación integral</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <button class="icon-button theme-toggle">
+                        <img src="{% static 'imagenes/t4s.png' %}" alt="Evaluación">
+                    </button>
+                    <span>evaluación</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <button class="icon-button theme-toggle">
+                        <img src="{% static 'imagenes/t5s.png' %}" alt="Salir">
+                    </button>
+                    <span>Salir</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+<div class="icons-section">
+    <button class="icon-button">
+        <img src="{% static 'imagenes/pagos.png' %}" alt="Pagos">
+    </button>
+    <button class="icon-button">
+        <img src="{% static 'imagenes/extensiones.png' %}" alt="Extensiones">
+    </button>
+    <button class="icon-button">
+        <img src="{% static 'imagenes/prorroga.png' %}" alt="Prórroga">
+    </button>
+    <button class="icon-button">
+        <img src="{% static 'imagenes/banco.png' %}" alt="Pago en banco">
+    </button>
+</div>
+<div class="main-content">
+    <div class="header-section">
+        <div class="info-box-TITLE">
+            <p><strong>CAJAS</strong></p>
+        </div>
+
+    </div>
+    <div class="info-section">
+        <div class="info-box">
+            <p>Nombre del alumno:</p>
+            <p><strong>Andrea Balandran Felix</strong></p>
+        </div>
+        <div class="info-box">
+            <p>Estado:</p>
+            <p><strong>Activo</strong></p>
+        </div>
+        <div class="info-box">
+            <p>Ciclo:</p>
+            <p><strong>2024-2</strong></p>
+        </div>
+        <div class="info-box">
+            <p>Cargo:</p>
+            <p><strong>$8,525</strong></p>
+        </div>
+        <div class="info-box">
+            <p>Abono:</p>
+            <p><strong>$3,500</strong></p>
+        </div>
+        <div class="info-box">
+            <p>Saldo:</p>
+            <p><strong>$5,025</strong></p>
+        </div>
+    </div>
+    <div class="button-section">
+        <button class="details-button">Detalles</button>
+        <button class="pay-button">Pagar</button>
+    </div>
+</div>
+
+</body>
+</html>

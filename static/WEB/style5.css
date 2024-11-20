@@ -1,0 +1,260 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e6e6e6;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e6e6e6;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.logo img {
+    margin-top: 10px;
+    height: 70px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 5px 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-left: 900px;
+    max-width: 200px;
+    width: 100%;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    padding: 8px 12px;
+    font-size: 16px;
+    flex: 1;
+    margin-right: 50px;
+    width: 100%;
+}
+
+.search-bar .search-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.search-bar .search-button img {
+    height: 20px;
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+}
+
+.icon-button {
+    background-color: #465ED4;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.icon-button img {
+    height: 37px;
+}
+/* Estilos para el menú lateral */
+.sidebar {
+    width: 250px;
+    background-color: #e6e6e6;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.logo-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar-logo {
+    height: 80px;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    margin: 10px 0;
+}
+
+.menu a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    color: #333;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: #e0e0e0;
+}
+
+.menu img {
+    width: 24px;
+    height: 24px;
+}
+
+.submenu {
+    margin-left: 20px;
+    list-style: none;
+    padding: 5px 0;
+}
+
+.submenu li a {
+    font-size: 14px;
+    color: #666;
+}
+
+.submenu li a:hover {
+    color: #000;
+}
+.main-content {
+    margin-left: 300px; /* Para acomodar la sidebar */
+    margin-top: 30px;  /* Ajusta este valor para mover el div hacia arriba */
+    padding: 20px;
+    background-color: #e6e6e6;
+    border-radius: 8px;
+    max-width: 1200px;
+    margin-bottom: 150px;
+}
+
+
+.header-section h1 {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.info-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.info-box {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 25px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+    margin: 5px;
+}
+.info-box-TITLE{
+    background-color: #465ED4;
+    padding: 25px;
+    border-radius: 25px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #ffffff;
+    font-size: 34px;
+    margin-bottom: 60px;
+    width: 400px;
+    margin-left: 350px;
+    font-weight: bold;
+}
+.info-box p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.info-box strong {
+    color: #333;
+    font-size: 16px;
+}
+
+.button-section {
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.text-blue {
+    color: #465ED4 !important; /* Azul con prioridad */
+    font-weight: bold;
+}
+.text-red {
+    color: #E40663 !important; /* Rojo con prioridad */
+}
+.text-amarillo{
+    color: #FBB231 !important; /* Amarillo con prioridad */
+}
+
+
+.Titulo-tabla {
+    background-color: #465ED4;
+    padding: 15px;
+    border-radius: 25px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 19px;
+    margin-bottom: 20px;
+    margin-top: -140px; /* Reduce este valor para acercarlo más */
+    width: 300px; /* Puedes ajustar este ancho si es necesario */
+    margin-left: 710px;
+}
+.table-container {
+    border: 8px solid white; /* Borde exterior (sin cambios) */
+    border-radius: 25px;
+    background-color: white; /* Fondo blanco */
+    padding: -10px; /* Espacio dentro del recuadro */
+    width: 900px; /* Ajustar el ancho al contenido */
+    margin-left: 410px; /* Ajusta este valor para mover más a la derecha */
+}
+
+table {
+    border:  solid rgb(255, 255, 255); /* Borde exterior rojo */
+    border-collapse: collapse; /* Eliminar los espacios entre las celdas */
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid blue; /* Bordes internos de color azul */
+    padding: 10px;
+    text-align: left; /* Alinear texto a la izquierda */
+    border-radius: 25px;
+}
